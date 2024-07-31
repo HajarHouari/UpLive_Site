@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 10vh ;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+#logo {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+#home {
+    text-decoration: none;
+    color: black;
+    margin-right: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    position: relative;
+    margin-left: 4.5em;
+}
+
+#products {
+    text-decoration: none;
+    color: black;
+    margin-right: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+#services {
+    text-decoration: none;
+    color: black;
+    margin-right: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid black;
+    transition: 0.4s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+#search {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+
+#panier {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+
+#login {
+    width: 2em;
+    height: 2em;
+}
+
+body{
+    font-family: "Open Sans","PingFang SC","Microsoft YaHei","Helvetica Neue","Hiragino Sans GB","WenQuanYi Micro Hei",Arial,sans-serif;
+}
+
+#premierProduit {
+    background-image: url("./image/backgroundDJImini3.jpg");
+    background-position: center;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#djiMini3 {
+    padding-top: 0.5em;
+    color: aliceblue;
+    font-size: 3em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    color: aliceblue;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5em;
+}
+
+.buttonProduit1 {
+    display: block;
+    border-color: aliceblue;
+    color: aliceblue;
+    text-decoration: underline;
+    background-color: transparent;
+    height: 2em;
+    width: 9em;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-style: solid;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#Produit2et3 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mavic {
+    width: 48vw;
+    height: 75vh;
+    position: relative;
+    top: 7em;
+    border-radius: 1em;
+}
+
+#avata {
+    width: 48vw;
+    height: 75vh;
+    position: relative;
+    top: 7em;
+    border-radius: 1em;
+}
+
+.text {
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:0 2em;
+    top:-30em;
+    color:white;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-size: 3em;
+    padding-top: 2em;
+}
+
+.buttonProduit {
+    display: block;
+    border-color: black;
+    color: black;
+    background-color: transparent;
+    height: 3em;
+    width: 9em;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-style: solid;
+}
+
+#Produit4et5 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mini3pro {
+    width: 48vw;
+    height: 75vh;
+    position: relative;
+    top: 7em;
+    border-radius: 1em;
+}
+
+#Air2s {
+    width: 48vw;
+    height: 75vh;
+    position: relative;
+    top: 6.5em;
+    border-radius: 1em;
+}
+
+footer{
+    margin-top:3em;
+    background-color: #6aa5cd;
+    padding: 3em 0 5em;
+}
+.footer_boite{
+    max-width: 100%;
+    margin:0;
+
+}
+
+.footer_marque{
+    width:auto;
+    margin:auto;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    border:3px solid #AED6F1;
+}
+.footer_logo{
+    margin:0;
+    padding-right:0.25em;
+    font-family: 'La Belle Aurore', cursive;
+    color:#AED6F1;
+    font-weight:bold;
+    font-size:4em;   
+}
+.footer_slogan{
+    color:#AED6F1;
+    margin:0;
+    padding-left:0.25em;
+    font-family: 'La Belle Aurore', cursive;
+    color:rgb(227, 235, 244);
+    font-size:4em;
+}
+
+.lignes{
+    margin-top:2em;
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+
+.footer_boites{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer_boites h3{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer_boites h3::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #AED6F1;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+    .footer_boites ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer_boites ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer_boites ul li a:hover{
+    color: #ffffff;
+    padding-left: 5px;    
+    transform:scale(1.1);
+}
+
+.footer_boites .rs img{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+.footer_boites .rs img:hover{
+    border: 2px solid #bbbbbb;
+    cursor: pointer;
+    transform:scale(1.4);
+}
+
+h4{
+    width:30em;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #AED6F1;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.emailBox{
+    height: 40px;
+    display: flex;
+}
+
+.emailBox img{
+    background: transparent;
+    width: 40px;
+    line-height: 40px;
+}
+
+.tbox,.btn {
+    border: none;
+    outline: none;
+}
+
+.tbox {
+    width: 0px;
+    transition: 0.6s;
+    border-radius: 0.5em;
+}
+
+.emailBox:hover > .tbox,.tbox:focus {
+    width: 260px;
+    padding: 0 10px;
+    margin-left: 5px;
+}
+
+.btn {
+    background: transparent;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+

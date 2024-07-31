@@ -1,0 +1,478 @@
+body{
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    font-family: "Open Sans","PingFang SC","Microsoft YaHei","Helvetica Neue","Hiragino Sans GB","WenQuanYi Micro Hei",Arial,sans-serif;
+    margin:0;
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    height: 10vh;
+}
+
+#logo {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+#home {
+    text-decoration: none;
+    color: black;
+    margin-right: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    position: relative;
+    margin-left: 4.5em;
+}
+
+#products {
+    text-decoration: none;
+    color: black;
+    margin-right: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+#services {
+    text-decoration: none;
+    color: black;
+    margin-right: 4em;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #000000;
+    transition: 0.4s;
+}
+
+a:hover:after {
+    width: 100%;
+    cursor: pointer;
+}
+a:hover{
+    cursor:pointer;
+}
+
+#search {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+
+#panier {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
+
+#login {
+    width: 2em;
+    height: 2em;
+}
+
+.menuwhopper{
+    overflow: hidden;
+}
+.carrousel{
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    animation: glissade 30s infinite 2s;
+    flex-wrap: nowrap;
+    margin: 1em 0 3em;
+    white-space:nowrap;
+}
+.img {
+    float: left;
+    margin: 0;
+    object-fit: contain;
+    height: 80vh;
+    width: 100vw;
+}
+
+
+@keyframes glissade{
+    0%, 0% {
+        transform: translate(0)
+      }
+      20%, 25% {
+        transform: translate(-20.06%)
+      }
+      40%, 50% {
+        transform: translate(-40.06%)
+      }
+      60%, 75% {
+        transform: translate(-60.06%)
+      }
+      80%, 100% {
+        transform: translate(-80.06%)
+      }
+
+}
+
+.presentation{
+    height:50%;
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    display:flex;
+    flex-direction:column;
+}
+.presentation_titre{
+    text-align:center;
+    font-weight:bold;
+    font-size:3em;
+    margin-bottom:2em;
+    color: #bbbbbb;
+    font-weight:bold;
+}
+
+.boite1{
+    height:50%;
+    display:flex;
+    flex-direction:row;
+
+}
+.image1{
+    width:50%;
+    height:50%;
+}
+.texte1{
+    font-weight:normal;
+    font-size:1.5em;
+    color:#bbb;
+    padding-right:2em;
+}
+
+.boite2{
+    height:50%;
+    display:flex;
+    flex-direction:row;
+}
+.image2{
+    width:50%;
+    height:50%;
+}
+.texte2{
+    font-weight:normal;
+    font-size:1.25em;
+    color:#bbb;
+    padding-left:2em;
+}
+
+.txtbutton{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lienButton {
+    position: relative;
+    padding: 10px 30px;
+    width:5em;
+    margin: 0; color: #21ebff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.lienButton::before{
+    content: " ";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff; 
+    border-left: 2px solid #21ebff;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.lienButton::after 
+{ 
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    right: -1px; width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff; border-right: 2px solid #21ebff;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.lienButton:hover::before, a:hover::after 
+{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+.lienButton:hover 
+{
+    background: #21ebff;
+    color: #000;
+    box-shadow: 0 0 50px #21ebff; transition-delay: 0.5s;
+}
+
+
+.domaines{
+    margin:auto;  
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    padding-bottom:3em;  
+}
+.domaines_titre{
+    margin-top:5%;
+    text-align:center;
+    color:#bbb;
+}
+.domaines_images{
+    height:30em;
+    display:flex;
+    margin:auto;
+    justify-content:center;
+}
+
+a{
+    all:unset;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.texte{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:0 2em;
+    top:-30em;
+    color:white;
+    text-align: center;
+}
+.video{
+    width:23em;
+    margin:0 0.5em;
+}
+.video:hover{
+    cursor:pointer;
+}
+.video_image{
+    height:30em;
+    width:23em;
+    transition: transform 0.5s;
+}
+.video:hover{
+    transform:scale(1.05);
+}
+
+.entreprise{
+    width:23em;
+    margin:0 0.5em;
+}
+.entreprise:hover{
+    cursor:pointer;
+}
+.entreprise_image{
+    height:30em;
+    width:23em;
+    transition: transform 0.5s;
+}
+.entreprise:hover{
+    transform:scale(1.05);
+}
+
+.agriculture{
+    width:23em;
+    margin:0 0.5em;
+}
+.agriculture:hover{
+    cursor:pointer;
+}
+.agriculture_image{
+    height:30em;
+    width: 23em;
+    transition: transform 0.5s;
+}
+.agriculture:hover{
+    transform:scale(1.05);
+}
+
+
+
+footer{
+    margin-top:3em;
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    padding: 3em 0 5em;
+}
+.footer_boite{
+    max-width: 100%;
+    margin:0;
+
+}
+
+.footer_marque{
+    width:auto;
+    margin:auto;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    border:3px solid #AED6F1;
+}
+.footer_logo{
+    margin:0;
+    padding-right:0.25em;
+    font-family: 'La Belle Aurore', cursive;
+    color:#AED6F1;
+    font-weight:bold;
+    font-size:4em;   
+}
+.footer_slogan{
+    color:#AED6F1;
+    margin:0;
+    padding-left:0.25em;
+    font-family: 'La Belle Aurore', cursive;
+    color:rgb(227, 235, 244);
+    font-size:4em;
+}
+
+.lignes{
+    margin-top:2em;
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+
+.footer_boites{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer_boites h3{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer_boites h3::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #AED6F1;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+    .footer_boites ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer_boites ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer_boites ul li a:hover{
+    color: #ffffff;
+    padding-left: 5px;    
+    transform:scale(1.1);
+}
+
+.footer_boites .rs img{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+.footer_boites .rs img:hover{
+    border: 2px solid #bbbbbb;
+    cursor: pointer;
+    transform:scale(1.4);
+}
+
+h4{
+    width:30em;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #AED6F1;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.emailBox{
+    height: 40px;
+    display: flex;
+}
+
+.emailBox img{
+    background: transparent;
+    width: 40px;
+    line-height: 40px;
+}
+
+.tbox,.btn {
+    border: none;
+    outline: none;
+}
+
+.tbox {
+    width: 0px;
+    transition: 0.6s;
+    border-radius: 0.5em;
+}
+
+.emailBox:hover > .tbox,.tbox:focus {
+    width: 260px;
+    padding: 0 10px;
+    margin-left: 5px;
+}
+
+.btn {
+    background: transparent;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+
+
